@@ -9,3 +9,49 @@ section.header{
     border: solid 1px black;
     background-color: rgb(165, 240, 197);
 }
+
+.header a{
+    color: black;
+    text-decoration: none;
+}
+
+
+article{
+   display: flex;
+   border: solid 1px black;
+   margin: 1rem;
+   padding: 1rem;
+   background-color: rgb(0, 145, 124);
+}
+
+article > div{
+    border: solid 1px black;
+    flex: 50%
+}
+
+div > img{
+    width: 20rem;
+}
+
+@media screen and (max-width: 600px){
+    .header a:not(:first-child){display: none;}
+    .header a.icon{
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header.responsive {position: relative;}
+    .header.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .header.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
-    <section class="header">
+    <section class="header" id="topNavbar">
        <h1>Lance Gorton</h1>
-       <p>Home</p>
-       <p>About</p>
-       <p>Portfolio</p>
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+       <a href="portfolio.html">Portfolio</a>
+       <a href="javascript:void(0);" class="icon" onclick="topNav()"><i class="fa fa-bars"></i></a>
     </section>
+
     <article>
-        
+        <div>
+           <h2>A quick about me</h2>
+           <p>My name is Lance Gorton, I am 18 years old and I live in North Texas.</p>
+        </div>
+        <div>
+            <img src="aboutmepic.png">
+        </div>
     </article>
 </body>
 </html>
